@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
 	<link rel="shortcut icon" href="favicon.ico" />
@@ -27,10 +27,10 @@
 		<script type="text/javascript">
 
 			// Create the report viewer with default options
-			let viewer = new Stimulsoft.Viewer.StiViewer();
+			// let viewer = new Stimulsoft.Viewer.StiViewer();
 
 			// Create the report designer with default options and show it in this place
-			// let designer = new Stimulsoft.Designer.StiDesigner();
+			let designer = new Stimulsoft.Designer.StiDesigner();
 
 			// Create a new report instance
 			let report = new Stimulsoft.Report.StiReport();
@@ -53,11 +53,11 @@
 				// document.write("Rendered pages count: " + report.renderedPages.count);
 
 				// Assign report to the viewer, the report will be built automatically after rendering the viewer
-				viewer.report = report;
+				// viewer.report = report;
 
 
 				// Assign report to the designer
-				// designer.report = report;
+				designer.report = report;
 
 			});
 
